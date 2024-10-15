@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>PAWTÁSTICO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <div class="cabecera">
+        <img src="../images/Logo_marca.png" alt="cabecera" class="logo">
+      </div>
+    </header>
+    <!--Barra de navegación-->
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="presupuesto.html"class="activo">Presupuesto</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <!--Formulario-->
+      <form class="formulario_presupuesto">
+        <div>
+         <br>
+         <label for="nombre">Nombre:</label> <!--Solo puede ser valido con letras y espacios-->
+         <input type="text" id="nombre" name="nombre" required minlength="5" maxlength="60" pattern="[A-Za-z\s]+" title="El nombre solo puede contener letras y espacios">
+        </div>
+        <div>
+          <br>
+          <label for="email">Correo Electrónico:</label> <!--Se valida que solo se puedan introducir emails-->
+          <input type="email" id="email" name="email">
+        </div>
+        <div>
+          <br>
+          <label for="telefono">Teléfono:</label> <!--Solo se pueden introducir numeros entre 9 y 15 digitos-->
+          <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9,15}" title="Por favor, ingrese un número de teléfono válido con entre 9 y 15 dígitos">
+        </div>
+        <div>
+          <br>
+          <label for="informacion">Solicite más información:</label>
+          <br>
+          <textarea id="informacion" name="informacion" rows="5" cols="40" required placeholder="Escribe aquí..."></textarea>
+        </div>
+        <div>
+          <br>
+          <label>
+          <input type="checkbox" id="acepto" name="acepto" required> Acepto la <a href="#">Política de privacidad</a></label>
+        </div>
+        <div>
+          <br>
+          <button type="submit">Registrar</button>
+        </div>
+        <br>
+      </form>
+      <!--Pie de página-->
+      <footer>
+        <div class="RRSS"> 
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="../images/Logo_Instagram.png" alt="instagram">
+          </a>
+          <a href="https://www.facebook.com/?locale=es_ES" target="_blank">
+            <img src="../images/Logo_FB.png" alt="instagram">
+          </a>
+          <a href="https://x.com/?lang=es" target="_blank">
+            <img src="../images/Logo_X.png" alt="instagram">
+          </a>
+          <p>Calle de las Mascotas, 123, 28001 Madrid, España. <a href="#">Aviso legal</a></p>
+        </div>
+      </footer>
+</body>
+</html>

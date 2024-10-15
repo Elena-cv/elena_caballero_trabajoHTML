@@ -1,0 +1,157 @@
+*{
+   box-sizing: border-box;
+ }
+ /*Estilo del cuerpo*/
+body {
+   font-family: Arial; /*Tipo de fuente de texto*/
+   margin: 0;
+}
+/*Estilo cabecera*/
+header {
+   text-align: center;
+   background: white;
+}
+/*Estilo imagen cabecera*/
+.cabecera {
+   text-align: center;
+   background-color: white;
+   border-radius:20px;
+}
+.logo{
+   width: 500px;
+   height: 200px;
+}
+/*Estilo barra de navegación*/
+nav {
+   display:flex;
+   background-color: #f09595;
+}
+/*Estilos enlaces barra de navegación*/
+nav a {
+   color:white;
+   padding: 14px 20px;
+   text-decoration:none;
+   text-align:center;
+}
+/*Estilos para que los links cambien de color*/
+nav a:hover {
+   background-color: white;
+   color: black; 
+}
+nav a.activo {
+   background-color: white; /* Fondo blanco para la pestaña activa */
+   color: black; /* Cambiar color de texto para la pestaña activa */
+ }
+/*Pie de página*/
+footer{
+   flex:100%;
+   background-color:#f09595;
+   padding:20px;
+   text-align: center;
+}
+.RRSS a{
+   margin: 0 10px;
+   display: inline-block;
+}
+.RRSS img{
+   width: 40px; /* Tamaño de los iconos */
+   height: auto;
+}
+/*************************/
+/*Fin Estilos css general*/
+/*************************/
+
+/********************/
+/*Estilos index.html*/
+/********************/
+.contenedor_index {/*Estilos imagenes página inicio*/
+   display: grid; /* Usar CSS Grid para el diseño */
+   grid-template-columns: 50% auto; /* La primera columna se adapta al tamaño de la imagen, la segunda ocupa el resto */
+   align-items: center; /* Alinear verticalmente los elementos en el centro */
+   padding: 20px; /* Espacio alrededor del contenido */
+}
+.imagen_index img {
+   width: 90%; /* Ancho completo del contenedor */
+   height: auto; /* Mantiene la proporción de la imagen */
+   border-radius: 8px;
+}
+.texto_index {
+   display: flex; /* Para centrar el texto verticalmente */
+   flex-direction: column; /* Alinear el texto en columna */
+   justify-content: center; /* Centra verticalmente el contenido */
+   padding: 20px; /* Espacio interno */
+}
+/************************/
+/*Fin Estilos index.html*/
+/************************/
+
+/************************/
+/*Estilos productos.html*/
+/************************/
+.contenedor_fotos_productos{/* Estilo para el contenedor principal */
+   display: grid;
+   max-width: 880px; /* Ancho del contenedor */
+   padding: 1rem; /* Espacio interior */
+   margin:0 auto; /* Centra horizontalmente el contenedor */
+   grid-template-columns: 200px 200px 200px; /* Número de columnas */
+   grid-template-rows: 200px 200px 200px; /* Número de filas */
+   gap: 1rem; /* Espacio entre las imágenes */
+}
+.foto_productos img {/* Estilo para los ítems individuales */
+   width: 100%;
+   height: 100%;
+   border-radius: 10px; /*Bordes redondeados*/
+   object-fit: cover;
+}
+/****************************/
+/*Fin Estilos productos.html*/
+/****************************/
+
+/***********************/
+/*Estilos contacto.html*/
+/***********************/
+.ubicacion_contacto{
+   display:flex;
+   justify-content: space-between;
+   padding:20px;
+}
+.ubicacion, .datos_contacto{
+   flex:1;
+   padding:10px;
+   box-sizing: border-box;
+}
+/***************************/
+/*Fin Estilos contacto.html*/
+/***************************/
+
+/**************************/
+/*Estilos presupuesto.html*/
+/**************************/
+.formulario_presupuesto{
+   text-align: center;
+   background-color: white;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+   max-width: 400px;  /* Ancho máximo del formulario */
+   margin: 0 auto;    /* Centra el formulario horizontalmente */
+   box-sizing: border-box;
+}
+.formulario_presupuesto input[type="text"],
+.formulario_presupuesto input[type="email"],
+.formulario_presupuesto input[type="tel"],
+.formulario_presupuesto textarea,
+.formulario_presupuesto button {
+  display: block;       /* Para que cada input y textarea se apilen verticalmente */
+  margin: 10px auto;    /* Centrará los inputs horizontalmente */
+  width: 100%;          /* Para que los inputs ocupen todo el ancho del contenedor */
+  max-width: 100%;      /* Evitar que se desborde del contenedor */
+}
+
+.formulario_presupuesto label {
+  display: block;       /* Para que las etiquetas estén sobre los campos de entrada */
+  margin-bottom: 5px;
+}
+/******************************/
+/*Fin estilos presupuesto.html*/
+/******************************/
